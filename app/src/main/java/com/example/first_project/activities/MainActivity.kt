@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initControls() {
-        val adapter: ProductAdapter = ProductAdapter(this@MainActivity,onItemClick,onItemDelete)
+        val adapter= ProductAdapter(this@MainActivity,onItemClick,onItemDelete)
 
         rv_product.setHasFixedSize(true)
         rv_product.layoutManager=LinearLayoutManager(this)
